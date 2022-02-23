@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns:5% 90% 5%;
+    background: linear-gradient(to bottom, rgb(84, 238, 130), white);
+    background-size: cover ;
+    background-position-x:center ;
+    background-position-y: 9%;
+}
+
+.webcontent{
+    width: 60%;
+    margin: auto;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    text-align: center;
+    font-size: 80px;
+    color: #333333;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+}
+
+.menu{
+    grid-row: 2;
+    background-color: cornflowerblue;
+    border-radius: 1em;
+}
+
+.menu ul {
+    display: flex;
+    margin: 5px;
+    list-style: none;
+    
+    
+}
+
+.menu li{
+    float: left;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 12px 40px;
+    background-color: aliceblue;
+    position: relative;
+    left: 0px;
+    border-radius: 10px;
+    
+}
+
+.menu li:hover{
+    background-color:aquamarine;	
+    box-shadow: 0px 0px 30px aquamarine;
+    transition:all .5s ease-in-out;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 50px;
+    top: 37px;
+    left: 0px;
+}
+.menu li ul li{
+    margin-top: 10px;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    transition:all .5s ease-in-out;
+    border-radius: 3px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight:bold;
+    color: black;
+}
+
+.menu a:hover{
+    color: blue;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 67px;
+    background-color: rgb(64, 224, 104);
+    height: 340px;
+    width: 40%;
+    border-radius: 1em;  
+    box-shadow: 0px 0px 30px rgb(0, 253, 126);
+    
+}
+
+label{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form div {
+    display: flex;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input{
+    height: 30px;
+    text-align: center;
+    border:solid  black 1px;
+    color: grey;
+    border: 6px hidden #1C6EA4;
+    border-radius: 21px 26px 2px 2px;
+}
+
+
+p{
+    color: black;
+}
+
+form div p input{
+    height: 12px;
+}
+
+
+button{
+    width: 88px;
+    height: 2em;
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px dotted;
+}
+
+
+footer{
+    grid-row: 4;
+    font-size: 0.5em;
+    margin-top: 94px;
+}
+
+footer h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer div{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+footer div img{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+
+
+

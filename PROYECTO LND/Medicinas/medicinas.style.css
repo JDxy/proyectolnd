@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:5% 90% 5%;
+    background: linear-gradient(to bottom, rgb(13, 219, 99), white);
+    background-size: cover ;
+    background-position-x:center ;
+    background-position-y: 9%;
+}
+
+.webcontent{
+    display: grid;
+    width: 60%;
+    margin: auto;
+    grid-column: 2;
+    grid-template-rows:100px 55px 778px 40px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 80px;
+    color: #333333;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+}
+
+.menu{
+    grid-row: 2;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+
+.menu li{
+    float: left;
+    margin-top: 6px;
+    text-decoration: none;
+    padding: 12px 40px;
+    background-color: aliceblue;
+    position: relative;
+    left: 0px;
+    border-radius: 10px;
+}
+
+.menu li:hover{
+    background-color:aquamarine;
+    box-shadow: 0px 0px 30px aquamarine;	
+    transition:all .5s ease-in-out;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 50px;
+    top: 42px;
+    left: 4px;
+    
+}
+.menu li ul li{
+    margin-top: 10px;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight:bold;
+    color: black;
+}
+
+.menu a:hover{
+    color: blue;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+h3{
+    margin-top: -30px;
+}
+.content{
+    text-align: center;
+    margin-top: 10px;
+    background-color: aliceblue;
+}
+
+.content article {
+    border-bottom: 0.07143em solid #ddd;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 230px;
+    padding: 4px
+}
+
+article img{
+    width: 26%;
+    height: 200px;
+}
+
+footer{
+    margin-top: 20px;
+    grid-row: 4;
+    font-size: 0.5em;
+}
+
+footer h4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer div{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1px;
+    
+}
+
+footer div img{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 3em;
+    width: 60%;
+}
